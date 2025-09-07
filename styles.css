@@ -162,6 +162,8 @@ body {
     align-items: center;
     background: var(--gradient-hero);
     overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
 .hero-bg {
@@ -1270,6 +1272,11 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero {
+        margin-top: 80px !important;
+        padding-top: 40px !important;
+    }
+    
     .hamburger {
         display: flex;
     }
@@ -1367,6 +1374,11 @@ body {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        margin-top: 100px !important;
+        padding-top: 60px !important;
+    }
+    
     .hero-title {
         font-size: 2rem;
     }
