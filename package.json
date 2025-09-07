@@ -1,0 +1,40 @@
+{
+  "name": "akash-resume-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Akash C - ELT Developer & Python Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "dev": "serve . -l 3000",
+    "build": "echo 'No build step required for static HTML'",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [
+    "resume",
+    "portfolio",
+    "elt-developer",
+    "python-developer",
+    "data-integration",
+    "salesforce",
+    "snowflake",
+    "fastapi",
+    "django"
+  ],
+  "author": "Akash C <akashaku32@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://yourusername.github.io/resume",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/resume.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/resume/issues"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0",
+    "gh-pages": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
