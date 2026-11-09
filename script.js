@@ -705,7 +705,7 @@
         { label: 'Theme: Aurora', action: () => setTheme('aurora') },
         { label: 'Copy email', action: () => navigator.clipboard?.writeText('akashaku32@gmail.com').then(() => showNotification('Email copied', 'success')) },
         { label: 'Open LinkedIn', action: () => window.open('https://www.linkedin.com/in/akash-c-99a120201', '_blank') },
-        { label: 'Download resume', action: () => { const a = document.createElement('a'); a.href = 'assets/akash-resume.pdf'; a.download = ''; a.click(); } },
+        { label: 'Download resume', action: () => { const a = document.createElement('a'); a.href = 'assets/akash-c-data-engineer-resume.pdf'; a.download = 'Akash-C-Data-Engineer-Resume.pdf'; a.click(); } },
     ];
 
     function renderPaletteList(items) {
