@@ -238,6 +238,8 @@
     });
 
     const allNavLinks = document.querySelectorAll('.nav-link');
+    const navPill = document.querySelector('.nav-pill');
+
     window.addEventListener('scroll', () => {
         let current = '';
         document.querySelectorAll('main section[id]').forEach((section) => {
@@ -247,12 +249,20 @@
             link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
         });
 
+        if (navPill) {
+            navPill.classList.toggle('is-scrolled', window.scrollY > 12);
+        }
+
         const sp = document.getElementById('scrollProgress');
         if (sp) {
             const h = document.documentElement.scrollHeight - window.innerHeight;
             sp.style.width = h > 0 ? `${(window.scrollY / h) * 100}%` : '0%';
         }
     }, { passive: true });
+
+    if (navPill) {
+        navPill.classList.toggle('is-scrolled', window.scrollY > 12);
+    }
 
     // --- Spotlight ---
     document.querySelectorAll('[data-spotlight]').forEach((card) => {
